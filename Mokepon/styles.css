@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&family=Rubik+Storm&family=Zen+Dots&display=swap');
+
+body{
+    font-family: 'Rubik 80s Fade', cursive;
+    font-family: 'Rubik Storm', cursive;
+    font-family: 'Zen Dots', cursive;
+    color: blue;
+    background-color: silver;
+}
+h1{
+    border: 2px solid black;
+}
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo {
+    color: blue;
+    width: 300px;   /* ancho*/
+    height: 50px;   /*alto*/
+    background-color: darkgrey; /* color de fondo*/
+    text-align: center;
+    border-radius: 50px;
+}
+.subtitulo{
+    color: blue;
+}
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 10px;           /* es para separar las cajas */
+}
+.tarjeta-de-mokepon{
+    width: 300px;
+    height: 120px;
+    background: gray;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tarjeta-de-mokepon img{
+    width: 100px;
+}
+#boton-mascota{
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid black;
+    color: blue;
+    font-family: 'Rubik 80s Fade', cursive;
+    font-family: 'Rubik Storm', cursive;
+    font-family: 'Zen Dots', cursive;
+}
+input{
+    display: none;
+
+}
+input:checked + label{
+    background-color: aquamarine;
+
+}
+
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+.boton-de-ataque-fuego{
+    background-color: red;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 150px;
+    font-family: 'Rubik 80s Fade', cursive;
+    font-family: 'Rubik Storm', cursive;
+    font-family: 'Zen Dots', cursive;
+}
+.boton-de-ataque-agua{
+    background-color: aqua;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 150px;
+    font-family: 'Rubik 80s Fade', cursive;
+    font-family: 'Rubik Storm', cursive;
+    font-family: 'Zen Dots', cursive;
+}
+.boton-de-ataque-tierra{
+    background-color: rgb(94, 24, 24);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 150px;
+    font-family: 'Rubik 80s Fade', cursive;
+    font-family: 'Rubik Storm', cursive;
+    font-family: 'Zen Dots', cursive;
+}
+#mensajes{
+    width: 425px;
+    background: rgb(78, 74, 74);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#boton-reiniciar{
+    border: transparent;
+    color: black;
+    font-family: 'Rubik 80s Fade', cursive;
+    font-family: 'Rubik Storm', cursive;
+    font-family: 'Zen Dots', cursive;
+    border-radius: 5px;
+    width: 200px;
+}
+.ataques{
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+#vidas-jugador{
+    font-size: 32px;
+    margin-top: 0;
+}
+#vidas-enemigo{
+    font-size: 32px;
+    margin-top: 0;
+}
+
+
+.ataques-jugador, .ataques-enemigo{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+@media(max-width: 360px){
+    .tarjetas, .tarjetas-ataques{
+        flex-direction: column;
+    }
+}
